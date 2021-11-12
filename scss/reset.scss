@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0
+}
+dl, ol, ul{
+	margin: 0;
+	padding: 0	
+}
+
+.form-control:focus{
+	box-shadow: none;
+	border-color: $color-input-focus;
+}
+
+.nav-tabs{
+	border: none;
+
+	.nav-link{
+		border: none;
+		
+		&:hover, &:focus{
+			border: none;
+		}
+		
+		&.active{
+			border: none;
+		}
+	}
+}

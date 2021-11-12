@@ -1,0 +1,138 @@
+.active-dot{
+	position: relative;
+
+	&:after{
+	    height: 6px;
+	    width: 6px;
+	    background-color: $color-active;
+
+	    @include position-top-right;
+	}
+}
+
+.count-circle{
+	position: relative;
+
+	span{
+	    height: 18px;
+	    width: 18px;
+	    background-color: $color-count-bg;
+	    color: $color-white;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    font-size: 14px;
+	    font-family: $ff-ssp;
+
+	    @include position-top-right($x: 60%, $y: -60%);
+	}
+}
+
+.section-title{
+	@include section-title;
+}
+
+.products-wrap{
+	.single-product{
+		&.style-1{
+		    border-radius: 14px;
+			box-shadow: 0px 0px 0px 1px $color-deep-gray;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			padding: 10px;
+
+
+			.image-wrap{
+				flex: 3;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+
+				img{
+					width: 100%;
+					height: auto;
+				}
+				.badges{
+					position: absolute;
+					top: 0;
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					flex-direction: row-reverse;
+
+					.badge{
+						border-radius: 5px;
+						padding: 3px 10px;
+						font-size: 14px;
+						font-weight: $ws-regular;
+						line-height: 22px;
+						margin: 0 1px;
+					}
+
+					.sale-badge{
+						background: $color-primary;
+						color: $color-white;
+						order: 1;
+					}
+					.tag-badge{
+						background: $color-primary;
+						color: $color-white;
+						order: 2;
+					}
+				}
+				.buttons-wrap{
+					position: absolute;
+					bottom: 0;
+					visibility: hidden;
+					opacity: 0;
+					transition: all 0.3s linear;
+
+					button{
+						padding: 9px 10px 10px 11px;
+    					border-radius: 4px;
+    					background: $color-primary;
+    					border: none;
+    					color: $color-white;
+    					margin-right: 5px;
+
+    					&:last-child{
+    						margin-right: 0;
+    					}
+					}
+				}
+			}
+			.content-wrap{
+				flex: 1;
+				padding: 12px 0 16px 0;
+				text-align: center;
+
+				.product-title{
+
+				}
+				.price{
+					.sale{
+
+					}
+					.del{
+
+					}
+				}
+				.ratings{
+
+				}
+			}
+
+			&:hover{
+				box-shadow: 0px 2px 5px 2px $color-deep-gray;
+
+				.buttons-wrap{
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

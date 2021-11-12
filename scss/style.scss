@@ -1,0 +1,110 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+@import 'variables', 'mixins', 'common', 'reset';
+
+body{
+	font-family: 'Work Sans', 'Source Sans Pro','Roboto', sans-serif;
+	font-size: 14px;
+	font-family: $ws-regular;
+}
+.container .row{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.header{
+	.topbar{
+		background: $color-deep-gray;
+
+		.left-menu, .right-menu{
+			@include inline-menu($font-size: 13px);
+		}
+		.left-menu{
+
+		}s
+		.right-menu{
+			
+		}
+	}
+
+	.main-header{
+		background-color: $color-header-bg;
+		padding: 26px 0 27px 0;
+
+		.logo{
+			max-width: 160px;
+			height: auto;
+			a{
+				display: inline-block;
+			}
+
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+		.search-wrap{
+			.search-text{
+				position: relative;
+				border-top-left-radius: 10px;
+    			border-bottom-left-radius: 10px;
+
+				&:before{
+					content: "";
+    				height: 22px;
+    				width: 13px;
+				    background: blue;
+				    z-index: 14;
+				    position: absolute;
+				    left: 9px;
+				    top: 0;
+				}
+			}
+			.search-select{
+				/* border-left: none; */
+			}
+			.search-button{
+				background-color: $color-primary;
+				font-size: 14px;
+				font-family: $ws-regular;
+				padding: 13px 39px;
+				color: $color-white;
+				border-top-right-radius: 10px;
+    			border-bottom-right-radius: 10px;
+			}
+		}
+		.menu-icons{
+			@include inline-menu($padding: 0 8px, $font-size: 18px);
+		}
+	}
+
+	.header-menu{
+		padding: 20px 0;
+		border-bottom: 1px solid $color-input-focus;
+		.categories{
+		}
+		.shop-menu{
+			@include inline-menu($padding: 0 12px, $font-size: 15px);
+		}	
+	}
+}
+
+.most-popular{
+	.most-popular-tabs{
+		.nav-tabs{
+			.nav-link{
+				color: $color-default-text;
+				
+				&.active{
+					color: $color-primary;
+				}
+			}
+		}
+	}
+}

@@ -47,11 +47,3 @@ ul > li inline menu
     right: $right;
     transform: translate( $x, $y );
 }
-
-@mixin section-title($font-size: 40px, $font-weight: $ws-regular){
-    text-align: center;
-    font-size: $font-size;
-    font-weight: $font-weight;
-    line-height: 22px;
-    margin: 20px 0;
-}

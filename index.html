@@ -13,6 +13,7 @@
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/compiled/style.css" rel="stylesheet">
 
     <title>Sales System</title>
@@ -163,7 +164,7 @@
 		<!-- ./header -->
 
 		<!-- most popular section  -->
-		<section class="most-popular">
+		<section class="most-popular my-4">
 			<div class="container">
 				<div class="row">
 					<h2 class="section-title">Most Popular</h2>
@@ -184,12 +185,13 @@
 					  <div class="tab-pane fade show active" id="all">
 					  	<div class="container">
 					  		<div class="row products-wrap">
-					  			<div class="col-3">
+					  			<div class="col-3 mb-3">
 					  				<div class="single-product style-1">
 					  					<div class="image-wrap">
-					  						<img src="images/product1.png" alt="Locket New">
+					  						<a href="#">
+					  							<img src="images/product2.png" alt="Locket New">
+					  						</a>
 					  						<div class="buttons-wrap">
-					  							<button>1</button>
 					  							<button>
 					  								<i class="fas fa-balance-scale-right count-circle"></i>
 					  							</button>
@@ -198,43 +200,18 @@
 					  							<div class="badge sale-badge">
 					  								<span>10%</span>
 					  							</div>
-					  						</div>
-					  					</div>
-					  					<div class="content-wrap">
-					  						<h3 class="product-title">Locket New</h3>
-					  						<div class="price">
-					  							<span class="sale">$ 200</span>
-					  							<span class="del">$ 180</span>
-					  						</div>
-					  						<div class="ratings">
-					  							<i class="fas fa-star"></i>
-					  							<i class="fas fa-star"></i>
-					  							<i class="fas fa-star"></i>
-					  							<i class="fas fa-star"></i>
-					  							<i class="fas fa-star"></i>
-					  						</div>
-					  					</div>
-					  				</div>
-					  			</div>
-					  			<div class="col-3">
-					  				<div class="single-product style-1">
-					  					<div class="image-wrap">
-					  						<img src="images/product2.png" alt="Locket New">
-					  						<div class="buttons-wrap">
-					  							<button>1</button>
-					  						</div>
-					  						<div class="badges">
-					  							<div class="badge sale-badge">
-					  								<span>10%</span>
-					  							</div>
 
 					  							<div class="badge tag-badge">
-					  								<span>20%</span>
+					  								<span>Sale</span>
 					  							</div>
 					  						</div>
 					  					</div>
 					  					<div class="content-wrap">
-					  						<h3 class="product-title">Locket New</h3>
+					  						<h3 class="product-title">
+					  							<a href="#">
+					  								Locket New
+					  							</a>
+					  						</h3>
 					  						<div class="price">
 					  							<span class="sale">$ 200</span>
 					  							<span class="del">$ 180</span>
@@ -252,18 +229,184 @@
 					  		</div>
 					  	</div>
 					  </div>
-					  <div class="tab-pane fade" id="beauty">2</div>
-					  <div class="tab-pane fade" id="groceries">3</div>
+					  <div class="tab-pane fade" id="beauty">
+					  	<div class="container">
+					  		<div class="row products-wrap">
+					  			<div class="col-3 mb-3">
+					  				<div class="single-product style-1">
+					  					<div class="image-wrap">
+					  						<a href="#">
+					  							<img src="images/product1.png" alt="Locket New">
+					  						</a>
+					  						<div class="buttons-wrap">
+					  							<button>
+					  								<i class="fas fa-balance-scale-right count-circle"></i>
+					  							</button>
+					  						</div>
+					  						<div class="badges">
+					  							<div class="badge sale-badge">
+					  								<span>10%</span>
+					  							</div>
+
+					  							<div class="badge tag-badge">
+					  								<span>Sale</span>
+					  							</div>
+					  						</div>
+					  					</div>
+					  					<div class="content-wrap">
+					  						<h3 class="product-title">
+					  							<a href="#">
+					  								Locket New
+					  							</a>
+					  						</h3>
+					  						<div class="price">
+					  							<span class="sale">$ 200</span>
+					  							<span class="del">$ 180</span>
+					  						</div>
+					  						<div class="ratings">
+					  							<i class="fas fa-star"></i>
+					  							<i class="fas fa-star"></i>
+					  							<i class="fas fa-star"></i>
+					  							<i class="fas fa-star"></i>
+					  							<i class="fas fa-star"></i>
+					  						</div>
+					  					</div>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  </div>
+					  <div class="tab-pane fade" id="groceries">
+					  	<div class="container">
+					  		<div class="row products-wrap">
+					  			<div class="col-3 mb-3">
+					  				<div class="single-product style-1">
+					  					<div class="image-wrap">
+					  						<a href="#">
+					  							<img src="images/product2.png" alt="Locket New">
+					  						</a>
+					  						<div class="buttons-wrap">
+					  							<button>
+					  								<i class="fas fa-balance-scale-right count-circle"></i>
+					  							</button>
+					  						</div>
+					  						<div class="badges">
+					  							<div class="badge sale-badge">
+					  								<span>10%</span>
+					  							</div>
+
+					  							<div class="badge tag-badge">
+					  								<span>Sale</span>
+					  							</div>
+					  						</div>
+					  					</div>
+					  					<div class="content-wrap">
+					  						<h3 class="product-title">
+					  							<a href="#">
+					  								Locket New
+					  							</a>
+					  						</h3>
+					  						<div class="price">
+					  							<span class="sale">$ 200</span>
+					  							<span class="del">$ 180</span>
+					  						</div>
+					  						<div class="ratings">
+					  							<i class="fas fa-star"></i>
+					  							<i class="fas fa-star"></i>
+					  							<i class="fas fa-star"></i>
+					  							<i class="fas fa-star"></i>
+					  							<i class="fas fa-star"></i>
+					  						</div>
+					  					</div>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  </div>
 					</div>
+				</div>
+				<div class="row justify-content-center my-2">
+					<a href="#" class="btn primary-button">View More</a>
 				</div>
 			</div>
 		</section>
 		<!-- ./most popular section  -->
 
+		<!-- brands section -->
+		<section class="brands my-4">
+			<div class="container">
+				<div class="row">
+					<h2 class="section-title">Brands</h2>
+					<p class="section-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				</div>
+				<div class="row my-4">
+					<!-- Slider main container -->
+					<div class="brands-slider swiper">
+					  <!-- Additional required wrapper -->
+					  <div class="swiper-wrapper">
+					    <!-- Slides -->
+					    <div class="swiper-slide">
+					    	<img src="images/slider1.png" alt="">
+					    </div>
+					    <div class="swiper-slide">
+					    	<img src="images/slider1.png" alt="">
+					    </div>
+					    <div class="swiper-slide">
+					    	<img src="images/slider1.png" alt="">
+					    </div>
+					  </div>
+					  <!-- If we need pagination -->
+					  <div class="swiper-pagination"></div>
+
+					  <!-- If we need navigation buttons -->
+					  <div class="swiper-button-prev"></div>
+					  <div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ./brands section -->
+
+		<!-- shops section -->
+		<section class="shops my-4">
+			<div class="container">
+				<div class="row">
+					<h2 class="section-title">Shops</h2>
+					<p class="section-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				</div>
+				<div class="row my-4">
+					<!-- Slider main container -->
+					<div class="shops-slider swiper">
+					  <!-- Additional required wrapper -->
+					  <div class="swiper-wrapper">
+					    <!-- Slides -->
+					    <div class="swiper-slide">
+					    	<img src="images/slider1.png" alt="">
+					    </div>
+					    <div class="swiper-slide">
+					    	<img src="images/slider1.png" alt="">
+					    </div>
+					    <div class="swiper-slide">
+					    	<img src="images/slider1.png" alt="">
+					    </div>
+					  </div>
+					  <!-- If we need pagination -->
+					  <div class="swiper-pagination"></div>
+
+					  <!-- If we need navigation buttons -->
+					  <div class="swiper-button-prev"></div>
+					  <div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ./shops section -->
+
     </div>
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
    </body>
 </html>

@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color-input-focus".
-        on line 12 of /Applications/MAMP/htdocs/sales_html/scss/reset.scss
+        on line 13 of /Applications/MAMP/htdocs/sales_html/scss/reset.scss
 
-7: 	padding: 0	
-8: }
-9: 
-10: .form-control:focus{
-11: 	box-shadow: none;
-12: 	border-color: $color-input-focus;
-13: }
-14: 
-15: .nav-tabs{
-16: 	border: none;
-17: 
+8: 	list-style: none;
+9: }
+10: 
+11: .form-control:focus{
+12: 	box-shadow: none;
+13: 	border-color: $color-input-focus;
+14: }
+15: 
+16: .nav-tabs{
+17: 	border: none;
+18: 
 
 Backtrace:
-/Applications/MAMP/htdocs/sales_html/scss/reset.scss:12
+/Applications/MAMP/htdocs/sales_html/scss/reset.scss:13
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -61,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-input-focus\".\A         on line 12 of /Applications/MAMP/htdocs/sales_html/scss/reset.scss\A \A 7: 	padding: 0	\A 8: }\A 9: \A 10: .form-control:focus{\A 11: 	box-shadow: none;\A 12: 	border-color: $color-input-focus;\A 13: }\A 14: \A 15: .nav-tabs{\A 16: 	border: none;\A 17: "; }
+  content: "Error: Undefined variable: \"$color-input-focus\".\A         on line 13 of /Applications/MAMP/htdocs/sales_html/scss/reset.scss\A \A 8: 	list-style: none;\A 9: }\A 10: \A 11: .form-control:focus{\A 12: 	box-shadow: none;\A 13: 	border-color: $color-input-focus;\A 14: }\A 15: \A 16: .nav-tabs{\A 17: 	border: none;\A 18: "; }

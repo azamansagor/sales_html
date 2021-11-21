@@ -44,6 +44,14 @@
     margin-bottom: 20px;
 }
 
+.footer-title{
+	text-align: left;
+    font-size: 18px;
+    font-weight: $ws-medium;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
 .primary-button{
 	font-weight: $ws-medium;
 	font-size: 16px;
@@ -189,6 +197,7 @@
 	}
 }
 
+/* swiper styles */
 .swiper-wrapper{
 	.swiper-slide{
 		height: 160px;
@@ -222,3 +231,87 @@
 .swiper-button-next:after, .swiper-button-prev:after{
 	font-size: 15px;
 }
+/* ./swiper styles */
+
+/* ads styles */
+.ads{
+	.ads-wrapper{
+		padding: 80px 0 50px 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+    	background-position: 100% 100%;
+
+		.ad-header{
+			font-size: 54px;
+    		margin-bottom: 60px;
+	 	   	color: $color-white;
+		    line-height: 40px;
+		    font-weight: $ws-regular;
+		    text-transform: uppercase;
+		}
+		.button-outline{
+			font-size: 22px;
+    		color: $color-white;
+    		padding: 0px 10px;
+    		text-transform: uppercase;
+    		font-weight: 400;
+    		background: transparent;
+    		border: 1px solid $color-white;
+		}
+	}
+}
+/* ./ads styles */
+
+
+/* vertical menu */
+.vertical-menu{
+	margin-bottom: 16px; 
+
+	li{
+	    font-size: 14px;
+	    font-weight: $ws-regular;
+	    line-height: 22px;
+	    margin: 6px 0;
+
+	    a{
+	    	text-decoration: none;
+	    	display: inline-block;
+
+		    i{
+				font-size: 16px;
+				margin-right: 14px;
+			}
+			span{
+				
+			}
+	    }
+	}
+}
+/* ./vertical menu */
+
+/* social buttons */
+.social-buttons{
+	display: inline-flex;
+
+	li{
+		margin-right: 7px;
+
+		a{
+			text-decoration: none;
+			padding: 10px;
+			font-size: 10px;
+			color: $color-primary-bg;
+			border: 1px solid $color-input-focus;
+			border-radius: 50%;
+			background-color: $color-white;
+			display: inline-block;
+			line-height: 0;
+
+			&:hover{
+				background-color: $color-primary-bg;
+				color: $color-white;
+			}
+		}
+	}
+}
+/* ./social buttons */

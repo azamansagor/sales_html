@@ -25,16 +25,30 @@
 		<!-- header -->
 		<header class="header">
 			<!-- topbar -->
-			<div class="topbar">
+			<div class="topbar d-none d-md-block">
 				<div class="container">
 					<div class="row align-items-center">
 	    				<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 left-menu">
 	    					<ul class="d-flex">
-	    						<li>
-	    							<a href="#">Euro</a>
+	    						<li class="dropdown">
+										  <a class="dropdown-toggle" href="#" role="button"data-bs-toggle="dropdown">
+										    Euro
+										  </a>
+
+										  <ul class="dropdown-menu">
+										    <li><a class="dropdown-item" href="#">USD</a></li>
+										    <li><a class="dropdown-item" href="#">BDT</a></li>
+										  </ul>
 	    						</li>
-	    						<li>
-	    							<a href="#">En</a>
+	    						<li class="dropdown">
+										  <a class="dropdown-toggle" href="#" role="button"data-bs-toggle="dropdown">
+										    En
+										  </a>
+
+										  <ul class="dropdown-menu">
+										    <li><a class="dropdown-item" href="#">Bn</a></li>
+										    <li><a class="dropdown-item" href="#">Ar</a></li>
+										  </ul>
 	    						</li>
 	    					</ul>
 	    				</div>
@@ -65,14 +79,14 @@
 			<div class="main-header">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="col-3">
+						<div class="col-6 col-md-3">
 							<div class="logo">
 								<a href="#">
 									<img src="images/logo.png" alt="Website Logo">
 								</a>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="d-none d-md-block col-md-6">
 							<div class="search-wrap">
 								<div class="input-group">
 								    <input type="text" class="form-control search-text" placeholder="Looking for...">
@@ -84,28 +98,28 @@
 									</div>
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-6 col-md-3">
 							<div class="menu-icons">
 								<ul class="d-flex justify-content-end">
 		    						<li>
 		    							<a href="#">
-		    								<i class="fas fa-balance-scale-right count-circle"><span>0</span></i>
+		    								<i class="icon-balance count-circle"><span>0</span></i>
 		    							</a>
 		    						</li>
 		    						<li>
 		    							<a href="#">
-		    								<i class="far fa-heart count-circle"><span>0</span></i>
+		    								<i class="icon-heart count-circle"><span>0</span></i>
 		    							</a>
 		    						</li>
 		    						<li>
 		    							<a href="#">
-		    								<i class="fas fa-shopping-cart count-circle"><span>10</span></i>
+		    								<i class="icon-bascet count-circle"><span>10</span></i>
 		    							</a>
 		    						</li>
 		    						<li>
 		    							<a href="#">
-		    								<i class="far fa-user"></i>
-		    								<span>Login</span>
+		    								<i class="icon-user"></i>
+		    								<span class="d-none d-md-inline-block">Login</span>
 		    							</a>
 		    						</li>
 		    					</ul>
@@ -120,14 +134,248 @@
 			<div class="header-menu">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="col-4">
+						<div class="d-none d-md-block col-md-4">
 							<div class="categories">
-								<i class="fas fa-bars"></i> Categories
+							  <div onclick="categoryMenuFunction()" class="dropdown-button"><i class="icon-bar"></i>  Categories</div>
+							  <div id="categoryDropdown" class="dropdown-content">
+							    <ul>
+							    	<li>
+							    		<a href="#">Home</a>
+							    		<i class="fas fa-chevron-right"></i>
+							    		<div class="submenu">
+							    			<div class="container-fluid h-100">
+							    				<div class="row h-100 submenu-wrapper">
+							    					<div class="col-3 submenu-columns">
+							    						<h3 class="menu-title">Accessories</h3>
+							    						<ul>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    						</ul>
+							    					</div>
+							    					<div class="col-3 submenu-columns">
+							    						<h3 class="menu-title">Accessories</h3>
+							    						<ul>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    						</ul>
+							    					</div>
+							    					<div class="col-3 submenu-columns">
+							    						<h3 class="menu-title">Accessories</h3>
+							    						<ul>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    						</ul>
+							    					</div>
+							    					<div class="col-3 submenu-columns">
+							    						<h3 class="menu-title">Accessories</h3>
+							    						<ul>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    						</ul>
+							    					</div>
+							    					<div class="col-3 submenu-columns">
+							    						<h3 class="menu-title">Accessories</h3>
+							    						<ul>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    						</ul>
+							    					</div>
+							    					<div class="col-3 submenu-columns">
+							    						<h3 class="menu-title">Accessories</h3>
+							    						<ul>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    						</ul>
+							    					</div>
+							    					<div class="col-3 submenu-columns">
+							    						<h3 class="menu-title">Accessories</h3>
+							    						<ul>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    						</ul>
+							    					</div>
+							    					<div class="col-3 submenu-columns">
+							    						<h3 class="menu-title">Accessories</h3>
+							    						<ul>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    						</ul>
+							    					</div>
+							    					<div class="col-3 submenu-columns">
+							    						<h3 class="menu-title">Accessories</h3>
+							    						<ul>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    						</ul>
+							    					</div>
+							    					<div class="col-3 submenu-columns">
+							    						<h3 class="menu-title">Accessories</h3>
+							    						<ul>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    						</ul>
+							    					</div>
+							    					<div class="col-3 submenu-columns">
+							    						<h3 class="menu-title">Accessories</h3>
+							    						<ul>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    						</ul>
+							    					</div>
+							    					<div class="col-3 submenu-columns">
+							    						<h3 class="menu-title">Accessories</h3>
+							    						<ul>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    							<li>
+							    								<a href="#">Samsung TV</a>
+							    							</li>
+							    						</ul>
+							    					</div>
+							    				</div>
+							    			</div>
+							    		</div>
+							    	</li>
+							    	<li>
+							    		<a href="#">Home</a>
+							    	</li>
+							    	<li>
+							    		<a href="#">Home</a>
+							    	</li>
+							    	<li>
+							    		<a href="#">Home</a>
+							    	</li>
+							    	<li>
+							    		<a href="#">Home</a>
+							    	</li>
+							    	<li>
+							    		<a href="#">Home</a>
+							    	</li>
+							    </ul>
+							  </div>
 							</div>
 						</div>
 						<div class="col-8">
 							<div class="shop-menu">
-								<ul class="d-flex">
+								<ul class="d-flex flex-column flex-md-row sidenav" id="mobile-menu">
+									<a href="javascript:void(0)" class="closebtn d-block d-md-none" onclick="closeNav()">&times;</a>
 		    						<li>
 		    							<a href="#">
 		    								Home
@@ -154,6 +402,9 @@
 		    							</a>
 		    						</li>
 		    					</ul>
+		    				<span class="mobile-nav-open d-block d-md-none" onclick="openNav()">
+		    					<i class="icon-bar"></i>
+		    				</span>
 							</div>
 						</div>
 					</div>
@@ -336,7 +587,7 @@
 		<section class="ads my-4">
 			<div class="container">
 				<div class="row ads-wrapper" style="background-image: url('images/ad1.png');">
-					<div class="col-6 offset-sm-1 text-center">
+					<div class="col-12 col-md-6 offset-md-1 text-center">
 						<h2 class="ad-header">Fashion Jewelry</h2>
 						<button class="button-outline">Shop Now</button>
 					</div>
@@ -518,7 +769,7 @@
 		<section class="ads my-4">
 			<div class="container">
 				<div class="row ads-wrapper" style="background-image: url('images/ad1.png');">
-					<div class="col-6 offset-sm-1 text-center">
+					<div class="col-12 col-md-6 offset-md-1 text-center">
 						<h2 class="ad-header">Fashion Jewelry</h2>
 						<button class="button-outline">Shop Now</button>
 					</div>
@@ -788,7 +1039,7 @@
 					</div>
 				</div>
 				<div class="row footer-main">
-					<div class="col-12 col-sm-5 col-lg-4 text-center text-sm-start">
+					<div class="col-12 col-sm-5 col-lg-4 my-2 text-center text-sm-start">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 						<p>House -28, Road-7A, Dhanmondi, Dhaka.</p>
 						<ul class="vertical-menu">
@@ -822,7 +1073,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-12 col-sm-6 offset-sm-1 col-lg-2 offset-lg-1  text-center text-sm-start">
+					<div class="col-12 col-sm-6 offset-sm-1 col-lg-2 offset-lg-1  my-2 text-center text-sm-start">
 						<h3 class="footer-title text-center text-sm-start">About Us</h3>
 						<ul class="vertical-menu">
 							<li>
@@ -862,7 +1113,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-12 col-sm-5 col-lg-2 offset-lg-1 text-center text-sm-start">
+					<div class="col-12 col-sm-5 col-lg-2 offset-lg-1 my-2 text-center text-sm-start">
 						<h3 class="footer-title text-center text-sm-start">Products</h3>
 						<ul class="vertical-menu">
 							<li>
@@ -907,7 +1158,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-12 col-sm-6 offset-sm-1 col-lg-2 offset-lg-0 text-center text-sm-start">
+					<div class="col-12 col-sm-6 offset-sm-1 col-lg-2 offset-lg-0 my-2 text-center text-sm-start">
 						<h3 class="footer-title text-center text-sm-start">My Account</h3>
 						<ul class="vertical-menu">
 							<li>

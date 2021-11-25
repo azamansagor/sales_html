@@ -47,3 +47,20 @@ ul > li inline menu
     right: $right;
     transform: translate( $x, $y );
 }
+
+@mixin button-outline($font-size: 22px, $color: $color-white, $hover-color: $color-white, $tt: uppercase, $bg: transparent, $border: $color-white, $br: 0px, $padding: 0px 10px){
+    font-size: $font-size;
+    color: $color;
+    padding: $padding;
+    text-transform: $tt;
+    font-weight: 400;
+    background: $bg;
+    border: 1px solid $border;
+    display: inline-block;
+    border-radius: $br;
+
+    &:hover{
+        color: $hover-color;
+        text-decoration: none;
+    }
+}

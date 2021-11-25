@@ -255,13 +255,7 @@
 		    text-transform: uppercase;
 		}
 		.button-outline{
-			font-size: 22px;
-    		color: $color-white;
-    		padding: 0px 10px;
-    		text-transform: uppercase;
-    		font-weight: 400;
-    		background: transparent;
-    		border: 1px solid $color-white;
+			@include button-outline();
 		}
 	}
 }

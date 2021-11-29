@@ -15,7 +15,7 @@
     padding: 10px;
     display: inline-block;
 }
-.sidenav {
+.side-navigation {
   height: 100%;
   width: 0;
   position: fixed;
@@ -51,8 +51,8 @@
 
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .side-navigation {padding-top: 15px;}
+  .side-navigation a {font-size: 18px;}
 }
 
 

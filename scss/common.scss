@@ -12,6 +12,7 @@
 
 .count-circle{
 	position: relative;
+	margin-right: 8px;
 
 	span{
 	    height: 18px;
@@ -25,6 +26,10 @@
 	    font-family: $ff-ssp;
 
 	    @include position-top-right($x: 60%, $y: -60%);
+	}
+
+	&:last-child{
+		margin-right: 0;
 	}
 }
 
@@ -271,6 +276,10 @@
 	    font-weight: $ws-regular;
 	    line-height: 22px;
 	    margin: 6px 0;
+
+	    i{
+	    	margin-right: 8px;
+	    }
 
 	    a{
 	    	text-decoration: none;

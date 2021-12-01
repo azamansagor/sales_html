@@ -698,7 +698,9 @@ body {
       .header .topbar .left-menu ul, .header .topbar .right-menu ul {
         list-style: none; }
         .header .topbar .left-menu ul li, .header .topbar .right-menu ul li {
-          list-style: none; }
+          list-style: none;
+          cursor: pointer;
+         }
           .header .topbar .left-menu ul li a, .header .topbar .right-menu ul li a {
             display: inline-block;
             padding: 10px 20px;

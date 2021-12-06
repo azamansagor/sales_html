@@ -27,10 +27,6 @@
 
 	    @include position-top-right($x: 60%, $y: -60%);
 	}
-
-	&:last-child{
-		margin-right: 0;
-	}
 }
 
 .section-title{

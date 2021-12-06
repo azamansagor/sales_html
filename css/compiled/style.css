@@ -404,8 +404,6 @@ ul > li inline menu
     top: 0;
     right: 0;
     transform: translate(60%, -60%); }
-  .count-circle:last-child {
-    margin-right: 0; }
 
 .section-title {
   text-align: center;

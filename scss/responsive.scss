@@ -1,87 +1,95 @@
 @media (max-width: 767px){
-  .header{
-    .header-menu{
-      border-bottom: 1px solid $color-input-focus;
-      .categories{
-        
-      }
+	.header{
 
-      .shop-menu{
-        @include inline-menu($padding: 0 12px, $font-size: 15px);
+		.topbar{
+			.left-menu, .right-menu{
+				@include inline-menu($font-size: 12px, $padding: 5px 8px);
+			}
+		}
+		.header-menu{
+		  	border-bottom: 1px solid $color-input-focus;
+
+		  .shop-menu{
+		    @include inline-menu($padding: 0 12px, $font-size: 15px);
 
 
-      .mobile-nav-open{
-        font-size: 20px;
-          cursor: pointer;
-          padding: 10px;
-          display: inline-block;
-      }
-      .side-navigation {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #060606fa;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
+		  .mobile-nav-open{
+		    font-size: 20px;
+		      cursor: pointer;
+		      padding: 10px;
+		      display: inline-block;
+		  }
+		  .side-navigation {
+		    height: 100%;
+		    width: 0;
+		    position: fixed;
+		    z-index: 1;
+		    top: 0;
+		    left: 0;
+		    background-color: #060606fa;
+		    overflow-x: hidden;
+		    transition: 0.5s;
+		    padding-top: 60px;
 
-        a {
-          padding: 8px 8px 8px 32px;
-          text-decoration: none;
-          font-size: 25px;
-          color: #fff;
-          display: block;
-          transition: 0.3s;
+		    a {
+		      padding: 8px 8px 8px 32px;
+		      text-decoration: none;
+		      font-size: 25px;
+		      color: #fff;
+		      display: block;
+		      transition: 0.3s;
 
-          &:hover{
-            color: #f1f1f1;
-          }
-        }
+		      &:hover{
+		        color: #f1f1f1;
+		      }
+		    }
 
-        .closebtn {
-          position: absolute;
-          top: 0;
-          right: 25px;
-          font-size: 36px;
-          margin-left: 50px;
-        }
-      }
+		    .closebtn {
+		      position: absolute;
+		      top: 0;
+		      right: 25px;
+		      font-size: 36px;
+		      margin-left: 50px;
+		    }
+		  }
 
-      } 
-    }
-  }
+		  } 
+		}
+	}
+	/* brands and shops slider style */
+	.brands-slider, 
+	.shops-slider{
+		.swiper-wrapper{
+			.swiper-slide{
+			  height: 100px;
+			}
+		}
+		.swiper-pagination{
+			bottom: 150px;
+			margin: 45px 0 0 0 ;
+		}
+	}
 
-  /* swiper styles */
-  .swiper-wrapper{
-    .swiper-slide{
-      height: 100px;
-    }
-  }
-  /* ./swiper styles */
+	/* ads styles */
+	.ads{
+	.ads-wrapper{
+	  padding: 30px 0 50px 0;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	    background-position: 100% 100%;
 
-  /* ads styles */
-  .ads{
-    .ads-wrapper{
-      padding: 30px 0 50px 0;
-      background-repeat: no-repeat;
-      background-size: cover;
-        background-position: 100% 100%;
-
-      .ad-header{
-        font-size: 54px;
-          margin-bottom: 60px;
-          line-height: 40px;
-      }
-      .button-outline{
-          font-size: 22px;
-          padding: 0px 10px;
-      }
-    }
-  }
-  /* ./ads styles */
+	  .ad-header{
+	    font-size: 54px;
+	      margin-bottom: 60px;
+	      line-height: 40px;
+	  }
+	  .button-outline{
+	      font-size: 22px;
+	      padding: 0px 10px;
+	  }
+	}
+	}
+	/* ./ads styles */
 
 
 .category-wrapper{
@@ -95,9 +103,6 @@
         }
       }
     }
-  }
-
-  .category-wrapper{
 
     .category-slider{
       .swiper-slide{
@@ -113,16 +118,22 @@
         }
       }
     }
-    .category-thumbs{
-      .single-thumb{
+
+    .category-thumbs-slider{
+      .swiper-slide{
          a{
           .thumb-image{
-            height: 90px;
+            height: 140px;
           }
          }
       }
+      .swiper-button-next, 
+			.swiper-button-prev{
+				top: calc( 50% - 60px );
+			}
     }
   }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -137,9 +148,7 @@
         }
       }
     }
-  }
 
-  .category-wrapper{
     .category-promotion{
       padding: 15px 10px 15px 10px;
         h4{
@@ -151,6 +160,7 @@
           line-height: 25px;
         }
     }
+
     .category-slider{
       .swiper-slide{
         .slider-content{
@@ -165,8 +175,9 @@
         }
       }
     }
-    .category-thumbs{
-      .single-thumb{
+
+    .category-thumbs-slider{
+      .swiper-slide{
          a{
           .thumb-image{
             height: 90px;
@@ -174,5 +185,6 @@
          }
       }
     }
+
   }
 }

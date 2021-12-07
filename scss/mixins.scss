@@ -10,6 +10,8 @@ ul > li inline menu
 
     li{
         list-style: none;
+        cursor: pointer;
+        
       a{
         display: inline-block;
         padding: $padding;

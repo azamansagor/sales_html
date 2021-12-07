@@ -442,9 +442,11 @@ body{
 			@include button-outline($font-size: 15px, $color: #777777, $hover-color: #777777, $tt: none, $border: #777777, $br: 5px, $padding: 5px 15px);
 		}
 	}
-	.category-thumbs{
-		.single-thumb{
+	.category-thumbs-slider{
+		.swiper-slide{
 			overflow: hidden;
+			border: none;
+			height: auto;
 			a{
 				display: block;
 				text-align: center;
@@ -479,6 +481,15 @@ body{
 				}
 			}
 		}
+		.swiper-pagination{
+			margin: 45px 0 0 0;
+			bottom: 140px !important;
+		}
+		.swiper-button-next, 
+		.swiper-button-prev{
+			top: calc( 50% - 30px );
+		}
+
 		&:first-child{
 			padding-left: 0;
 		}
@@ -490,6 +501,43 @@ body{
 
 /* ./category wrapper style */
 
+/* brands and shops slider style */
+.brands-slider, 
+.shops-slider{
+	.swiper-wrapper{
+		.swiper-slide{
+			height: 160px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid $color-input-focus;
+		}
+	}
+
+	.swiper-pagination{
+		bottom: 100px !important;
+		margin: 45px 0 0 0;
+
+		.swiper-pagination-bullet{
+			background: $color-white;
+			border: 1px solid #777777;
+			height: 10px;
+			width: 10px;
+		}
+
+		.swiper-pagination-bullet-active{
+			background: #777777;
+		}	
+	}
+
+	.swiper-button-next, .swiper-button-prev{
+		top: calc( 50% - 45px );
+	}
+	.swiper-button-next:after, .swiper-button-prev:after{
+		font-size: 15px;
+	}
+}
+/* ./brands and shops slider style */
 
 /* responsive style */
 

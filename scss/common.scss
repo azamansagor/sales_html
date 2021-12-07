@@ -113,6 +113,8 @@
 						font-weight: $ws-regular;
 						line-height: 22px;
 						margin: 0 1px;
+						height: auto;
+						width: auto;
 					}
 
 					.sale-badge{
@@ -202,20 +204,9 @@
 }
 
 /* swiper styles */
-.swiper-wrapper{
-	.swiper-slide{
-		height: 160px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border: 1px solid $color-input-focus;
-	}
-}
 
 .swiper-pagination{
 	position: relative;
-	bottom: 110px !important;
-	margin: 45px 0;
 
 	.swiper-pagination-bullet{
 		background: $color-white;
@@ -229,9 +220,6 @@
 	}	
 }
 
-.swiper-button-next, .swiper-button-prev{
-	top: calc( 50% - 45px );
-}
 .swiper-button-next:after, .swiper-button-prev:after{
 	font-size: 15px;
 }

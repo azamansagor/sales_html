@@ -33,3 +33,11 @@ a{
 	text-decoration: none;
 	color: $color-default-text;
 }
+
+.dropdown-menu{
+	min-width: max-content;
+	padding: 0;
+	transform: none !important;
+	top: 100% !important;
+	overflow: hidden;
+}

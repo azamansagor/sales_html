@@ -1077,7 +1077,7 @@ body {
   bottom: 140px !important; }
 .category-wrapper .category-thumbs-slider .swiper-button-next,
 .category-wrapper .category-thumbs-slider .swiper-button-prev {
-  top: calc( 50% - 30px ); }
+  top: calc( 50% - 50px ); }
 .category-wrapper .category-thumbs-slider:first-child {
   padding-left: 0; }
 .category-wrapper .category-thumbs-slider:last-child {

@@ -442,7 +442,7 @@ body{
 			@include button-outline($font-size: 15px, $color: #777777, $hover-color: #777777, $tt: none, $border: #777777, $br: 5px, $padding: 5px 15px);
 		}
 	}
-	.category-thumbs-slider{
+	.category-image-slider{
 		.swiper-slide{
 			overflow: hidden;
 			border: none;
@@ -483,7 +483,7 @@ body{
 		}
 		.swiper-pagination{
 			margin: 45px 0 0 0;
-			bottom: 140px !important;
+			bottom: 0 !important;
 		}
 		.swiper-button-next, 
 		.swiper-button-prev{

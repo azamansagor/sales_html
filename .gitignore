@@ -2,3 +2,8 @@
 .DS_Store
 css/.DS_Store
 js/.DS_Store
+.idea/watcherTasks.xml
+.idea/vcs.xml
+.idea/sales_html.iml
+.idea/modules.xml
+.idea/workspace.xml

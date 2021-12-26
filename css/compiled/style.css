@@ -546,7 +546,7 @@ ul > li inline menu
     background: #777777; }
 
 .swiper-button-next:after, .swiper-button-prev:after {
-  font-size: 15px; }
+  font-size: 15px !important; }
 
 /* ./swiper styles */
 /* ads styles */
@@ -1091,7 +1091,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #D7D7D7; }
+  border: 1px solid #D7D7D7;
+  overflow: hidden;
+  padding: 20px; }
+  .brands-slider .swiper-wrapper .swiper-slide a,
+  .shops-slider .swiper-wrapper .swiper-slide a {
+    max-width: 100%;
+    display: inline-block; }
+  .brands-slider .swiper-wrapper .swiper-slide img,
+  .shops-slider .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: auto; }
 .brands-slider .swiper-pagination,
 .shops-slider .swiper-pagination {
   bottom: 100px !important;

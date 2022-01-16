@@ -342,9 +342,10 @@ body{
 		border: 1px solid $color-input-focus;
 		border-radius: 5px;
 
-		ul{
-			li{
+		> ul{
+			> li{
 				border-bottom: 1px solid $color-input-focus;
+				position: relative;
 				a{
 				    font-size: 	15px;
 				    font-weight: $ws-regular;
@@ -355,12 +356,26 @@ body{
 				    	margin-right: 12px;
 				    }
 				}
+				> ul{
+					display: none;
+					transition: all 0.3s linear;
+					position: absolute;
+					left: calc( 100% + 25px );
+
+					> li {
+
+					}
+				}
+
 				&:hover{
 					a{
 						i{
 							margin-right: 14px;
 							transition: all 0.3s linear;
 						}
+					}
+					> ul{
+						display: block;
 					}
 				}
 				&:last-child{
@@ -515,18 +530,21 @@ body{
 
 			a{
 				max-width: 100%;
-				display: inline-block;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 
 			img{
 				width: 100%; 
+				max-height: 100%;
 				height: auto;
 			}
 		}
 	}
 
 	.swiper-pagination{
-		bottom: 100px !important;
+		bottom: 100px;
 		margin: 45px 0 0 0;
 
 		.swiper-pagination-bullet{
@@ -774,10 +792,91 @@ body{
 }
 /* ./shop sidebar */
 
+/* Single product page */
+.single-product-wrap{
+	.product-gallery-container {
+		position: relative;
+		width: 730px;
+		display: flex;
+		justify-content: space-between;
+		overflow: hidden;
 
+		.gallery-main {
+			width: 600px;
+			height: 300px;
+			box-shadow: 0 50px 75px 50px rgba(#1e1e1e, 0.18);
+			border: 1px solid #e9e9e9;
 
+			.swiper-button {
+				&-prev,
+				&-next {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					top: auto;
+					left: auto;
+					height: 75px;
+					width: 40px;
+					color: #e9e9e9;
+					background: #1e1e1e;
 
+					&::after {
+					font-size: 12px;
+					}
+				}
 
+				&-prev {
+					right: 40px;
+					border-right: 1px solid #e9e9e9;
+				}
+			}
+		}
+
+		.gallery-title {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			font-family: "Epilogue", sans-serif;
+			font-size: 50px;
+			font-weight: 700;
+			text-align: right;
+			text-transform: uppercase;
+			text-shadow: 0 0 20px rgba(#000, 0.3);
+			color: #ffffff;
+
+			.swiper-slide-active & {
+				animation: slide-in 0.3s ease-in both;
+			}
+		}
+
+		.gallery-thumbs {
+			order: -1;
+			width: 100px;
+			height: 300px;
+			margin-right: 15px;
+			padding-left: 15px;
+
+			.swiper-slide {
+				img {
+					transition: 0.3s;
+				}
+
+				&-active {
+					opacity: 0.9;
+				}
+
+				&-thumb-active {
+					opacity: 1;
+
+					img {
+						margin-left: -15px;
+					}
+				}
+			}
+		}
+	}
+}
+/* ./Single product page*/
 
 
 

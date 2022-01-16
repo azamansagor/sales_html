@@ -318,3 +318,57 @@
     width: 2px;
 }
 /* ./scrollbar design */
+
+/* Animations */
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    right: -50%;
+  }
+}
+
+/* shop and single product page */
+.shop-sidebar,
+.single-product-wrap{
+	/* size radio button style */
+	.radio-wrap{
+		.radio-item{
+			position:relative;
+			display: inline-flex;
+			column-gap: 5px;
+
+			input {
+				visibility:hidden;
+				width:0;
+
+				&:checked + label {
+					outline: 1px outset $color-primary;
+				}
+			}
+
+			label{
+				border: 5px solid #fff;
+				outline: 1px solid $color-input-focus;
+				padding: 8px 12px;
+				border-radius: 5px;
+				font-size: 16px;
+				font-weight: $ws-medium;
+				line-height: 22px;
+
+				&:hover {
+
+				}
+			}
+		}
+
+		&.color-wrap{
+			.radio-item{
+				label{
+					padding: 15px 15px;
+				}
+			}
+		}
+	}
+	/* ./size radio button style */
+}
+/* ./shop and single product page */

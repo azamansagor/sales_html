@@ -172,23 +172,23 @@ galleryThumbs.on('transitionStart', function(){
 });
 
 /* header category dropdown functionality start */
-function categoryMenuFunction() {
-  document.getElementById("categoryDropdown").classList.toggle("show");
-  document.getElementsByTagName( 'body' )[0].classList.toggle("show");
-}
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropdown-button')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+// function categoryMenuFunction() {
+//   document.getElementById("categoryDropdown").classList.toggle("show");
+//   document.getElementsByTagName( 'body' )[0].classList.toggle("show");
+// }
+// // Close the dropdown menu if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropdown-button')) {
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
 /* header category dropdown functionality end */
 
 
@@ -203,36 +203,38 @@ function closeNav() {
 /* mobile menu open close functionality end */
 
 /* shop page price range slider start */
-window.onload = function(){
-  slideOne();
-  slideTwo();
-}
-
 let sliderOne = document.getElementById("slider-1");
 let sliderTwo = document.getElementById("slider-2");
-let displayValOne = document.getElementById("range1");
-let displayValTwo = document.getElementById("range2");
-let minGap = 0;
-let sliderTrack = document.querySelector(".slider-track");
-let sliderMaxValue = document.getElementById("slider-1").max;
+if( sliderOne !== null && slideTwo !== null ){
+  let displayValOne = document.getElementById("range1");
+  let displayValTwo = document.getElementById("range2");
+  let minGap = 0;
+  let sliderTrack = document.querySelector(".slider-track");
+  let sliderMaxValue = document.getElementById("slider-1").max;
 
-function slideOne(){
-  if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
-    sliderOne.value = parseInt(sliderTwo.value) - minGap;
+  function slideOne(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+      sliderOne.value = parseInt(sliderTwo.value) - minGap;
+    }
+    displayValOne.value = sliderOne.value;
+    fillColor();
   }
-  displayValOne.value = sliderOne.value;
-  fillColor();
-}
-function slideTwo(){
-  if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
-    sliderTwo.value = parseInt(sliderOne.value) + minGap;
+  function slideTwo(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+      sliderTwo.value = parseInt(sliderOne.value) + minGap;
+    }
+    displayValTwo.value = sliderTwo.value;
+    fillColor();
   }
-  displayValTwo.value = sliderTwo.value;
-  fillColor();
-}
-function fillColor(){
-  percent1 = (sliderOne.value / sliderMaxValue) * 100;
-  percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-  sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
+  function fillColor(){
+    percent1 = (sliderOne.value / sliderMaxValue) * 100;
+    percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+    sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
+  }  
+
+  window.onload = function(){
+    slideOne();
+    slideTwo();
+  }
 }
 /* shop page price range slider end */

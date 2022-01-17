@@ -154,6 +154,20 @@
 				padding: 12px 0 16px 0;
 				text-align: center;
 
+				.variations{
+					.variation{
+						grid-gap: 10px;
+						margin-bottom: 10px;
+						span{
+							border-radius: 5px;
+							border: 1px solid $color-input-focus;
+							padding: 3px 10px;
+							font-size: 14px;
+							font-weight: $ws-regular;
+						}
+					}
+				}
+
 				.product-title{
 					font-weight: $ws-medium;
 					font-size: 16px;

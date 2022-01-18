@@ -164,6 +164,12 @@
 							padding: 3px 10px;
 							font-size: 14px;
 							font-weight: $ws-regular;
+							cursor: pointer;
+
+							&.variation-name{
+								border: 1px solid $color-primary-bg;
+								color: $color-primary-bg; 
+							}
 						}
 					}
 				}

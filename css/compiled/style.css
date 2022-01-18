@@ -512,7 +512,11 @@ ul > li inline menu
         border: 1px solid #D7D7D7;
         padding: 3px 10px;
         font-size: 14px;
-        font-weight: 400; }
+        font-weight: 400;
+        cursor: pointer; }
+        .products-wrap .single-product.style-1 .content-wrap .variations .variation span.variation-name {
+          border: 1px solid #0C6ADF;
+          color: #0C6ADF; }
     .products-wrap .single-product.style-1 .content-wrap .product-title {
       font-weight: 500;
       font-size: 16px;

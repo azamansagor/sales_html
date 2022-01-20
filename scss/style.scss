@@ -294,6 +294,9 @@ body{
 								a{
 									border-bottom: 1px solid transparent;								}
 							}
+							&:last-child a{
+								border-bottom: 1px solid transparent;								}
+							}
 						}
 					}
 

@@ -363,6 +363,7 @@
 
 				&:checked + label {
 					outline: 1px outset $color-primary;
+					color: $color-primary;
 				}
 			}
 

@@ -142,7 +142,19 @@ var galleryThumbs = new Swiper(".gallery-thumbs", {
   watchOverflow: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
-  direction: 'vertical'
+  direction: (window.innerWidth > 768) ? 'vertical' : 'horizontal',
+  breakpoints: {
+    // when window width is >= 0
+    0: {
+      slidesPerView: 4,
+      centeredSlides: false
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3,
+      centeredSlides: true
+    },
+  },
 });
 
 var galleryMain = new Swiper(".gallery-main", {
@@ -170,27 +182,6 @@ galleryMain.on('slideChangeTransitionStart', function() {
 galleryThumbs.on('transitionStart', function(){
   galleryMain.slideTo(galleryThumbs.activeIndex);
 });
-
-/* header category dropdown functionality start */
-// function categoryMenuFunction() {
-//   document.getElementById("categoryDropdown").classList.toggle("show");
-//   document.getElementsByTagName( 'body' )[0].classList.toggle("show");
-// }
-// // Close the dropdown menu if the user clicks outside of it
-// window.onclick = function(event) {
-//   if (!event.target.matches('.dropdown-button')) {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }
-/* header category dropdown functionality end */
-
 
 /* mobile menu open close functionality start */
 function openNav() {

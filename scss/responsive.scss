@@ -163,8 +163,6 @@
       .gallery-thumbs {
         order: unset;
         height: 100px;
-        width: 100%;
-        margin: 20px 0;
 
         .swiper-wrapper {
           height: 100%;
@@ -173,7 +171,6 @@
           .swiper-slide {
             padding: 12px 15px;
             height: 100% !important;
-            margin: 0 8px;
 
             img{
               height: 100%;

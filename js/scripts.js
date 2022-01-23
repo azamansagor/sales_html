@@ -136,29 +136,18 @@ new Swiper('.category-thumbs-slider', {
 
 /* single product page slider */
 var galleryThumbs = new Swiper(".gallery-thumbs", {
-  centeredSlides: true,
-  centeredSlidesBounds: true,
-  slidesPerView: 3,
-  watchOverflow: true,
+  centeredSlides: false,
+  centeredSlidesBounds: false,
+  slidesPerView: 4,
+  watchOverflow: false,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
   direction: (window.innerWidth > 768) ? 'vertical' : 'horizontal',
-  breakpoints: {
-    // when window width is >= 0
-    0: {
-      slidesPerView: 4,
-      centeredSlides: false
-    },
-    // when window width is >= 768px
-    768: {
-      slidesPerView: 3,
-      centeredSlides: true
-    },
-  },
+  spaceBetween: 10
 });
 
 var galleryMain = new Swiper(".gallery-main", {
-  watchOverflow: true,
+  watchOverflow: false,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
   preventInteractionOnTransition: true,

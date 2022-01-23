@@ -843,20 +843,14 @@ body{
 
 		.gallery-thumbs {
 			order: -1;
-			height: $product-gallery-height;
-			width: 125px;
+			margin-top: 20px;
 
 			.swiper-wrapper{
-				overflow-y: scroll;
-				height: $product-gallery-height;
 
 				.swiper-slide {
 					padding: 12px 15px;
 					width: 115px;
-					height: 124px !important;
 					background-color: $color-lite-gray;
-					margin-bottom : 10px;
-					margin-right: 10px;
 					border-radius: 8px;
 
 					img {
@@ -879,6 +873,7 @@ body{
 	}
 
 	.product-details-container{
+		padding: 0 20px;
 		.product-title{
 			font-size: 40px;
 			font-weight: $ws-regular;

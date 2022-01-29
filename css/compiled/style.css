@@ -675,6 +675,40 @@ ul > li inline menu
     padding: 15px 15px; }
 
 /* ./shop and single product page */
+.radio-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; }
+  .radio-item span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 5px solid #ffffff;
+    outline: 1px solid #D7D7D7;
+    margin-left: 10px;
+    transition: all 0.3s; }
+    .radio-item span:hover {
+      cursor: pointer;
+      outline: 1px solid #2E74E8; }
+  .radio-item .color {
+    height: 26px;
+    width: 26px; }
+  .radio-item .size {
+    padding: 0px 5px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 500; }
+
+.sidebar-row .radio-item {
+  border-radius: 5px; }
+  .sidebar-row .radio-item .color {
+    height: 40px;
+    width: 40px; }
+  .sidebar-row .radio-item .size {
+    padding: 8px 12px;
+    line-height: 22px; }
+
 * {
   margin: 0;
   padding: 0; }

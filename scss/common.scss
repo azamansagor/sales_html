@@ -393,3 +393,52 @@
 	/* ./size radio button style */
 }
 /* ./shop and single product page */
+
+
+
+.radio-item{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	span{
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+    	border-radius: 3px;
+    	border: 5px solid $color-white;
+    	outline: 1px solid $color-input-focus;
+    	margin-left: 10px;
+    	transition: all 0.3s;
+
+    	&:hover{
+    		cursor: pointer;
+    		outline: 1px solid $color-primary;
+    	}
+	}
+
+	.color{
+		height: 26px;
+		width: 26px;
+	}
+	.size{
+	    padding: 0px 5px;
+	    line-height: 20px;
+	    font-size: 16px;
+	    font-weight: $ws-medium;
+	}
+}
+
+.sidebar-row{
+	.radio-item{
+		border-radius: 5px;
+		.color{
+			height: 40px;
+			width: 40px;
+		}
+		.size{
+		    padding: 8px 12px;
+		    line-height: 22px;
+		}
+	}
+}
